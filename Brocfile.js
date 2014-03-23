@@ -62,7 +62,9 @@ module.exports = function (broccoli) {
       'handlebars.js',
       'ember.js',
       'ember-data.js',
-      'ember-resolver.js'
+      'ember-resolver.js',
+      'leaflet.js',
+      'bootstrap.js'
     ],
     wrapInEval: env !== 'production',
     outputFile: '/assets/app.js'
