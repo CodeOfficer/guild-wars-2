@@ -1,9 +1,9 @@
 export default Ember.ObjectController.extend({
 
-  needs: ['map_name'],
+  needs: ['mapName'],
 
-  breadcrumbs: Ember.computed.alias('controllers.map_name.breadcrumbs'),
+  breadcrumbs: Ember.computed.alias('controllers.mapName.breadcrumbs'),
 
-  breadcrumbWorldName: Ember.computed.alias('controllers.map_name.breadcrumbWorldName')
+  breadcrumbWorldName: Ember.computed.alias('controllers.mapName.breadcrumbWorldName')
 
 });

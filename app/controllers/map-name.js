@@ -1,21 +1,21 @@
 export default Ember.ObjectController.extend({
 
-  needs: ['world_name', 'map_names'],
+  needs: ['worldName', 'mapNames'],
 
-  breadcrumbWorldName: Ember.computed.alias('controllers.world_name.content'),
+  breadcrumbWorldName: Ember.computed.alias('controllers.worldName.content'),
 
   breadcrumbs: function() {
-    var trail = this.get('controllers.map_names.breadcrumbs');
+    var trail = this.get('controllers.mapNames.breadcrumbs');
     var breadcrumbs = Ember.A();
 
     breadcrumbs.pushObjects(trail);
     breadcrumbs.pushObject(Ember.Object.create({
       title: this.get('content.name'),
       path: 'map_name',
-      args:[this.get('controllers.world_name.content'), this.get('content')]
+      args:[this.get('controllers.worldName.content'), this.get('content')]
     }));
 
     return breadcrumbs;
-  }.property('controllers.world_name.content', 'controllers.map_names.breadcrumbs', 'content')
+  }.property('controllers.worldName.content', 'controllers.mapNames.breadcrumbs', 'content')
 
 });

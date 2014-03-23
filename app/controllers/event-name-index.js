@@ -1,10 +1,10 @@
 export default Ember.ObjectController.extend({
 
-  needs: ['event_name'],
+  needs: ['eventName'],
 
-  breadcrumbs: Ember.computed.alias('controllers.event_name.breadcrumbs'),
+  breadcrumbs: Ember.computed.alias('controllers.eventName.breadcrumbs'),
 
-  breadcrumbMapName: Ember.computed.alias('controllers.event_name.breadcrumbMapName'),
-  breadcrumbWorldName: Ember.computed.alias('controllers.event_name.breadcrumbWorldName')
+  breadcrumbMapName: Ember.computed.alias('controllers.eventName.breadcrumbMapName'),
+  breadcrumbWorldName: Ember.computed.alias('controllers.eventName.breadcrumbWorldName')
 
 });

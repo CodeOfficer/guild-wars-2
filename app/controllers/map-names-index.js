@@ -1,11 +1,11 @@
 export default Ember.ArrayController.extend({
 
-  needs: ['map_names'],
+  needs: ['mapNames'],
 
   sortProperties: ['name'],
 
-  breadcrumbs: Ember.computed.alias('controllers.map_names.breadcrumbs'),
+  breadcrumbs: Ember.computed.alias('controllers.mapNames.breadcrumbs'),
 
-  breadcrumbWorldName: Ember.computed.alias('controllers.map_names.breadcrumbWorldName')
+  breadcrumbWorldName: Ember.computed.alias('controllers.mapNames.breadcrumbWorldName')
 
 });

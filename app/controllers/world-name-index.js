@@ -1,7 +1,7 @@
 export default Ember.ObjectController.extend({
 
-  needs: ['world_name'],
+  needs: ['worldName'],
 
-  breadcrumbs: Ember.computed.alias('controllers.world_name.breadcrumbs')
+  breadcrumbs: Ember.computed.alias('controllers.worldName.breadcrumbs')
 
 });

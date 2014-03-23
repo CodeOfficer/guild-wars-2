@@ -1,9 +1,9 @@
 export default Ember.ObjectController.extend({
 
-  needs: ['world_names'],
+  needs: ['worldNames'],
 
   breadcrumbs: function() {
-    var trail = this.get('controllers.world_names.breadcrumbs');
+    var trail = this.get('controllers.worldNames.breadcrumbs');
     var breadcrumbs = Ember.A();
 
     breadcrumbs.pushObjects(trail);
@@ -14,6 +14,6 @@ export default Ember.ObjectController.extend({
     }));
 
     return breadcrumbs;
-  }.property('controllers.world_names.breadcrumbs', 'content')
+  }.property('controllers.worldNames.breadcrumbs', 'content')
 
 });

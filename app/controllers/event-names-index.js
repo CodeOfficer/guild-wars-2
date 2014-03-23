@@ -1,12 +1,12 @@
 export default Ember.ArrayController.extend({
 
-  needs: ['event_names'],
+  needs: ['eventNames'],
 
   sortProperties: ['state'],
 
-  breadcrumbs: Ember.computed.alias('controllers.event_names.breadcrumbs'),
+  breadcrumbs: Ember.computed.alias('controllers.eventNames.breadcrumbs'),
 
-  breadcrumbMapName: Ember.computed.alias('controllers.event_names.breadcrumbMapName'),
-  breadcrumbWorldName: Ember.computed.alias('controllers.event_names.breadcrumbWorldName')
+  breadcrumbMapName: Ember.computed.alias('controllers.eventNames.breadcrumbMapName'),
+  breadcrumbWorldName: Ember.computed.alias('controllers.eventNames.breadcrumbWorldName')
 
 });

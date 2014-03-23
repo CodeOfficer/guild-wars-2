@@ -1,10 +1,10 @@
 export default Ember.ArrayController.extend({
 
-  needs: ['world_names'],
+  needs: ['worldNames'],
 
   sortProperties: ['name'],
 
-  breadcrumbs: Ember.computed.alias('controllers.world_names.breadcrumbs'),
+  breadcrumbs: Ember.computed.alias('controllers.worldNames.breadcrumbs'),
 
   europeanWorldNames: function() {
     var content = this.get('arrangedContent');
