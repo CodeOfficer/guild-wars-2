@@ -2,7 +2,7 @@ export default Ember.Route.extend({
 
   // We actually return an Event here, not an EventName
   model: function(params) {
-    return this.modelFor('event_name');
+    return this.modelFor('eventName');
   },
 
   setupController: function(controller, model) {

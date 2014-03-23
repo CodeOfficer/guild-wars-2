@@ -1,7 +1,7 @@
 export default Ember.Route.extend({
 
   model: function(params) {
-    return this.modelFor('map_name');
+    return this.modelFor('mapName');
   },
 
   setupController: function(controller, model) {
