@@ -1,3 +1,5 @@
+import DebugAdapter from 'appkit/adapters/debug';
+
 export default DS.ActiveModelAdapter.extend({
 
   host: 'https://api.guildwars2.com',
