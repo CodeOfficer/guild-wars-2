@@ -1,8 +1,44 @@
-/* Put your CSS here */
-html, body {
-    margin: 20px;
+@import "fonts";
+@import "mixins";
+
+@charset "utf-8";
+
+/* TODO remove */
+@media (min-width: 700px) {
+  .nav-collapse.collapse {
+    height: auto !important;
+    overflow: visible !important;
+  }
 }
 
-@keyframes domChanged { from { background: yellow; } }
-@-webkit-keyframes domChanged { from { background: yellow; } }
-.ember-view { animation: domChanged 1s; -webkit-animation: domChanged 1s; }
+/* TODO revisit */
+.map {
+  height: 500px;
+}
+
+body {
+  font-family: "menomonia";
+  margin-bottom: 20px;
+}
+
+/* layers control */
+.leaflet-control-layers-toggle {
+  background-image: url('../images/leaflet/layers.png');
+  width: 36px;
+  height: 36px;
+}
+
+.leaflet-retina .leaflet-control-layers-toggle {
+  background-image: url('../images/leaflet/layers-2x.png');
+  background-size: 26px 26px;
+}
+
+.leaflet-div-icon {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: white;
+  text-align: center;
+  cursor: -webkit-grab;
+}
