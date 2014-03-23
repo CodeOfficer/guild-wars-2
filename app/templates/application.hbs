@@ -1,3 +1,37 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
 
-{{outlet}}
+    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+      <a class="brand" href="#">GW2 Event Notifier</a>
+
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          {{#linkTo "world_names" tagName="li" href=false}}
+            {{#linkTo "world_names"}}Worlds{{/linkTo}}
+          {{/linkTo}}
+          {{#linkTo "settings" tagName="li" href=false}}
+            {{#linkTo "settings"}}Settings{{/linkTo}}
+          {{/linkTo}}
+          {{#linkTo "api_status" tagName="li" href=false}}
+            {{#linkTo "api_status"}}API Status{{/linkTo}}
+          {{/linkTo}}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      {{outlet}}
+    </div>
+  </div>
+</div>
