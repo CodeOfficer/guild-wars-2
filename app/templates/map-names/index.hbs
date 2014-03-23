@@ -4,7 +4,7 @@
 
 {{#each map_name in controller}}
   <div>
-    {{#linkTo "event_names" breadcrumbWorldName map_name}}{{map_name.name}}{{/linkTo}}
+    {{#link-to "event_names" breadcrumbWorldName map_name}}{{map_name.name}}{{/link-to}}
   </div>
 {{else}}
   <div>No maps found</div>

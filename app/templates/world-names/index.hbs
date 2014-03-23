@@ -7,7 +7,7 @@
     <h2>North America</h2>
     {{#each americanWorldNames}}
       <div>
-        {{#linkTo "map_names" this}}{{name}}{{/linkTo}}
+        {{#link-to "map_names" this}}{{name}}{{/link-to}}
       </div>
     {{else}}
       <div>No worlds found</div>
@@ -19,7 +19,7 @@
     <h2>Europe</h2>
     {{#each europeanWorldNames}}
       <div>
-        {{#linkTo "map_names" this}}{{name}}{{/linkTo}}
+        {{#link-to "map_names" this}}{{name}}{{/link-to}}
       </div>
     {{else}}
       <div>No worlds found</div>
