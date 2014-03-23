@@ -2,16 +2,16 @@ export default DS.Model.extend({
 
   continent_id: DS.attr('number'),
   continent_name: DS.attr('string'),
-  continent_rect: DS.attr('raw'),
+  continent_rect: DS.attr(),
   default_floor: DS.attr('number'),
-  floors: DS.attr('raw'),
+  floors: DS.attr(),
   map_name: DS.attr('string'),
-  map_rect: DS.attr('raw'),
+  map_rect: DS.attr(),
   max_level: DS.attr('number'),
   min_level: DS.attr('number'),
   region_id: DS.attr('number'),
   region_name: DS.attr('string'),
-  skill_challenges: DS.attr('raw')
+  skill_challenges: DS.attr()
 
 });
 

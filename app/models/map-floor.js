@@ -1,10 +1,10 @@
 export default DS.Model.extend({
 
-  clamped_view: DS.attr('raw'),
+  clamped_view: DS.attr(),
   continent_id: DS.attr('string'),
   floor_id: DS.attr('string'),
-  regionData: DS.attr('raw'),
-  texture_dims: DS.attr('raw'),
+  regionData: DS.attr(),
+  texture_dims: DS.attr(),
 
   init: function() {
     this._super();

@@ -2,9 +2,9 @@ export default DS.Model.extend({
 
   map: DS.belongsTo('map'),
 
-  flags: DS.attr('raw'),
+  flags: DS.attr(),
   level: DS.attr('number'),
-  location: DS.attr('raw'),
+  location: DS.attr(),
   name: DS.attr('string')
 
 });
