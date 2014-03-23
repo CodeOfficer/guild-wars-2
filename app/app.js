@@ -35,4 +35,9 @@ Ember.RSVP.configure('onerror', function(error) {
   }
 });
 
+// This is so the ember chrome extension shows us more than 3 columns
+Ember.DataAdapter.reopen({
+  attributeLimit: 10
+});
+
 export default App;
