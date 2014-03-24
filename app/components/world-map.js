@@ -51,7 +51,7 @@ export default Ember.Component.extend({
 
   baseLayer: function() {
     return L.tileLayer('https://tiles.guildwars2.com/{continent_id}/{floor_id}/{z}/{x}/{y}.jpg', {
-      // continuousWorld: true,
+      continuousWorld: true,
       continent_id: this.get('continent_id'),
       floor_id: this.get('floor_id'),
       minZoom : this.get('minZoom'),
