@@ -1,8 +1,4 @@
-# Broccoli Sample App
-
-Sample Ember app for [Broccoli](https://github.com/joliss/broccoli).
-
-See [Brocfile.js](/Brocfile.js) for the build definition.
+# Guild Wars 2 Event Notifier
 
 To start the server, run:
 
