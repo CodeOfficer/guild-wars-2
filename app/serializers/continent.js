@@ -6,7 +6,7 @@ export default ApplicationSerializer.extend({
   // {"continents": {"1": {"name": "Tyria"}, "2": {"name": "Tyria"}}}
   // change it to ...
   // {"continents": [{"id": 1", name": "Tyria"}, {"id": 2, "name": "Tyria"}]
-  extractArray: function(store, type, payload, id, requestType) {
+  extractArray: function(store, type, payload) {
     var array = [];
 
     Ember.keys(payload.continents).forEach(function(key) {
@@ -17,7 +17,7 @@ export default ApplicationSerializer.extend({
 
     payload = {"continents": array};
 
-    return this._super(store, type, payload, id, requestType);
+    return this._super(store, type, payload);
   }
 
 });

@@ -2,13 +2,15 @@ import ApplicationSerializer from 'appkit/serializers/application';
 
 export default ApplicationSerializer.extend({
 
-  extractSingle: function(store, primaryType, payload, recordId, requestType) {
+  extractSingle: function(store, primaryType, payload) {
 
-    payload = payload.maps[recordId];
-    payload.id = recordId;
+    var id = Em.keys(payload.maps)[0];
+
+    payload = payload.maps[id];
+    payload.id = id;
     payload = {"map": payload};
 
-    return this._super(store, primaryType, payload, recordId, requestType);
+    return this._super(store, primaryType, payload);
   }
 
 });
