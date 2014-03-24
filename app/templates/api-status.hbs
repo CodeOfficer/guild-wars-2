@@ -2,7 +2,7 @@
 
 {{#each endpoint in controller}}
   <div>
-    <span class="label pull-right">{{endpoint.status}}</span>
+    <span class="label label-default pull-right">{{endpoint.status}}</span>
     {{endpoint.url}} - {{endpoint.ping}}ms
   </div>
 {{/each}}
