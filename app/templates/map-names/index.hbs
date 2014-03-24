@@ -2,9 +2,9 @@
 {{!-- {{view App.BreadcrumbsView contentBinding="breadcrumbs" }} --}}
 
 
-{{#each map_name in controller}}
+{{#each mapName in controller}}
   <div>
-    {{#link-to "event_names" breadcrumbWorldName map_name}}{{map_name.name}}{{/link-to}}
+    {{#link-to "event_names" breadcrumbWorldName mapName}}{{mapName.name}}{{/link-to}}
   </div>
 {{else}}
   <div>No maps found</div>
