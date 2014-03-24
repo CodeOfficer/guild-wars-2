@@ -9,7 +9,8 @@ export default Ember.Controller.extend({
     breadcrumbs.pushObjects(trail);
     breadcrumbs.pushObject(Ember.Object.create({
       title: 'Settings',
-      path: 'settings'
+      path: 'settings',
+      args:[]
     }));
 
     return breadcrumbs;

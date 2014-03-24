@@ -9,7 +9,8 @@ export default Ember.ArrayController.extend({
     breadcrumbs.pushObjects(trail);
     breadcrumbs.pushObject(Ember.Object.create({
       title: 'Worlds',
-      path: 'world_names'
+      path: 'world_names',
+      args:[]
     }));
 
     return breadcrumbs;

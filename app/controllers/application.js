@@ -4,7 +4,8 @@ export default Ember.Controller.extend({
     return Ember.A([
       Ember.Object.create({
         title: 'Home',
-        path: 'index'
+        path: 'index',
+        args:[]
       })
     ]);
   }.property()

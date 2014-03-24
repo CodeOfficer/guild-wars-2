@@ -25,6 +25,13 @@ body {
   margin-bottom: 20px;
 }
 
+/* TODO revisit - a hack to get around metamorph */
+.breadcrumb > li:not(:first-of-type):before {
+  padding: 0 5px;
+  color: #ccc;
+  content: "/\00a0";
+}
+
 /* layers control */
 .leaflet-control-layers-toggle {
   background-image: url('../images/leaflet/layers.png');

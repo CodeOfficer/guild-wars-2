@@ -1,5 +1,11 @@
 export default Ember.Route.extend({
 
+  actions: {
+    gotoBreadcrumb: function(args) {
+      this.transitionTo.apply(this, args);
+    }
+  },
+
   beforeModel: function() {
     var promises = [
       this.store.find('worldName', {}),
